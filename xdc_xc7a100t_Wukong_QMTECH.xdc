@@ -4,7 +4,8 @@
 
 
 
-## CLK
+## CLK 50MHz
+#create_clock -period 20.000 -name clk -waveform {0.000 10.000} [get_ports clk]
 #set_property -dict { PACKAGE_PIN M22 IOSTANDARD LVCMOS33 } [get_ports clk];       		#CLK
 #set_property CLOCK_DEDICATED_ROUTE FALSE [get_nets {clk_IBUF}]
 
